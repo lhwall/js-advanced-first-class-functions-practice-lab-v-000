@@ -49,7 +49,7 @@ function totalRevenue(array){
 }
 
 function callBackFunction(agg, el, i, arr){
-  return agg += el[revenue]
+    return agg += el["revenue"]
 }
 
 function averageRevenue(array){
