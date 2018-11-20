@@ -45,7 +45,11 @@ return newArray
 }
 
 function totalRevenue(array){
-  
+  let allRevenue = 0
+  array.forEach(function (driver){
+    allRevenue += driver.revenue
+  })
+  return allRevenue
 }
 
 function averageRevenue(array{
