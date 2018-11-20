@@ -22,10 +22,24 @@ function filterByHometown(array, location){
 }
 
 function sortByProperty(array, property){
-  array.sort(function (a, b){
-    return a.property - b.property
-  })}
+  const newArray = array.slice()
+  newArray.sort(function (a, b){
+    return a[property] - b[property]
+  }
+)
+return newArray
+}
 
   function driversByRevenue(array){
-  sortByProperty(array, revenue)
+    const newerArray = sortByProperty(array, "revenue")
+    return newerArray
+}
+
+function driversByName(array){
+  const newArray = array.slice()
+  newArray.sort(function (a, b){
+    return a["name"].localeCompare(b["name"])
+  }
+)
+return newArray
 }
