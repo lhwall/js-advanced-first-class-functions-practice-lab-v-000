@@ -48,10 +48,10 @@ function totalRevenue(array){
   array.reduce(callBackFunction, 0)
 }
 
-// function callBackFunction(agg, el, i, arr){
-//   return agg += el.revenue
-// }
-// 
-// function averageRevenue(array){
-//   totalRevenue(array)/array.length
-// }
+function callBackFunction(agg, el, i, arr){
+  return agg += el.revenue
+}
+
+function averageRevenue(array){
+  totalRevenue(array)/array.length
+}
