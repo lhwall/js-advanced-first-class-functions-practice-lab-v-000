@@ -52,6 +52,6 @@ function callBackFunction(agg, el, i, arr){
   return agg += el.revenue
 }
 
-function averageRevenue(array{
+function averageRevenue(array){
   totalRevenue(array)/array.length
 }
