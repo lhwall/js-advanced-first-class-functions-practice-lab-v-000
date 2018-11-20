@@ -43,3 +43,15 @@ function driversByName(array){
 )
 return newArray
 }
+
+function totalRevenue(array){
+  return array.reduce(callBackFunction, 0)
+}
+
+function callBackFunction(agg, el, i, arr){
+    return agg += el["revenue"]
+}
+
+function averageRevenue(array){
+  return totalRevenue(array)/array.length
+}
