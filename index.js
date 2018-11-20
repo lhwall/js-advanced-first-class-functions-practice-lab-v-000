@@ -45,7 +45,7 @@ return newArray
 }
 
 function totalRevenue(array){
-  array.reduce(callBackFunction, 0)
+  return array.reduce(callBackFunction, 0)
 }
 
 function callBackFunction(agg, el, i, arr){
